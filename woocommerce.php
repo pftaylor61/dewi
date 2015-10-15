@@ -2,9 +2,7 @@
 /**
  * Theme Page Section for our theme.
  *
- * @package ThemeGrill
- * @subpackage dewi
- * @since dewi 1.0
+ * @package Old Castle Web Services * @subpackage dewi * @since dewi 1.3.3 * This version by Old Castle Web Services, 2015 - based on Spacious by ThemeGrill
  */
 ?>
 

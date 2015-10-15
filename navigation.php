@@ -2,7 +2,10 @@
 /**
  * The template part for displaying navigation.
  *
- * @package dewi
+ * @package Old Castle Web Services
+ * @subpackage dewi
+ * @since dewi 1.3.3
+ * This version by Old Castle Web Services, 2015 - based on Spacious by ThemeGrill
  */
 ?>
 

@@ -2,9 +2,10 @@
 /**
  * This fucntion is responsible for rendering metaboxes in single post area
  *
- * @package ThemeGrill
+ * @package Old Castle Web Services
  * @subpackage dewi
- * @since dewi 1.0
+ * @since dewi 1.3.3
+ * This version by Old Castle Web Services, 2015 - based on Spacious by ThemeGrill
  */
  
  add_action( 'add_meta_boxes', 'dewi_add_custom_box' );

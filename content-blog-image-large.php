@@ -2,9 +2,10 @@
 /**
  * The template used for displaying blog image large post.
  *
- * @package ThemeGrill
+ * @package Old Castle Web Services
  * @subpackage dewi
- * @since dewi 1.0
+ * @since dewi 1.3.3
+ * This version by Old Castle Web Services, 2015 - based on Spacious by ThemeGrill
  */
 ?>
 
