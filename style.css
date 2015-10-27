@@ -4,11 +4,13 @@ Theme URI: http://oldcastleweb.com
 Author: Old Castle Web Services
 Author URI: http://oldcastleweb.com
 Description: Dewi is a responsive multipurpose theme. It was originally coded under the name Spacious by ThemeGrill (http://themegrill.com). I used the theme on my own site, amending it with a child theme. This worked up to Spacious version 1.3.3. However, Spacious version 1.3.4 broke my website, as many of the functions had been completely rewritten, in a manner that was incompatible with my child theme. I have therefore made a custom fork of the theme, pegged at version 1.3.3. This will gradually be amended, until it is an independent theme. It must, however, be emphasized that the vast majority of the code in this theme came from ThemeGrill. 
-Version: 1.4.1
+Version: 1.4.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: light, white, dark, two-columns, right-sidebar, left-sidebar, fluid-layout, responsive-layout, custom-header, custom-background, custom-menu, custom-colors, sticky-post, threaded-comments, translation-ready, featured-images, theme-options
 Text Domain: dewi
+GitHub Theme URI: https://github.com/pftaylor61/dewi
+GitHub Branch:    master
 
 Resetting and rebuilding styles have been helped along thanks to the fine work of
 Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
