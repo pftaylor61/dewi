@@ -16,12 +16,11 @@
 
  *
 
- * @package Old Castle Web Services
+ * @package ThemeGrill
+
  * @subpackage dewi
- * @since dewi 1.3.3
- * This version by Old Castle Web Services, 2015 - based on Spacious by ThemeGrill
 
-
+ * @since dewi 1.0
 
  */
 
@@ -32,11 +31,6 @@
  * Set the content width based on the theme's design and stylesheet.
 
  */
- 
- add_filter( 'github_updater_token_distribution',
-    function () {
-        return array( 'dewi' => '2d42dd03e411b463abce18feb713413f0b5acf5c' );
-    } );
 
 if ( ! isset( $content_width ) )
 
@@ -45,6 +39,8 @@ if ( ! isset( $content_width ) )
 
 
 add_action( 'after_setup_theme', 'dewi_setup' );
+
+add_theme_support( 'post-formats', array('aside') );
 
 /**
 
@@ -223,8 +219,29 @@ require_once( dewi_ADMIN_DIR . '/meta-boxes.php' );
 
 
 /** Load Widgets and Widgetized Area */
+// I think the widgets in this theme might be risky. 
+// I commented the line below to return to default widgets
+//require_once( dewi_WIDGETS_DIR . '/widgets.php' );
 
-require_once( dewi_WIDGETS_DIR . '/widgets.php' );
+/* These lines are designed to produce a simple widget area */
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function dewi_prov_widgets_init() {
+
+	register_sidebar( array(
+		'name' 				=> __( 'Right Sidebar', 'dewi' ),
+		'id' 					=> 'dewi_right_sidebar',
+		'description'   	=> __( 'Shows widgets at Right side.', 'dewi' ),
+		'before_widget' 	=> '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  	=> '</aside>',
+		'before_title'  	=> '<h3 class="widget-title"><span>',
+		'after_title'   	=> '</span></h3>'
+	) );
+
+}
+add_action( 'widgets_init', 'dewi_prov_widgets_init' );
 
 
 

@@ -3,10 +3,9 @@
  * Implements a custom header for dewi.
  * See http://codex.wordpress.org/Custom_Headers
  *
- * @package Old Castle Web Services
+ * @package ThemeGrill
  * @subpackage dewi
- * @since dewi 1.3.3
- * This version by Old Castle Web Services, 2015 - based on Spacious by ThemeGrill
+ * @since dewi 1.0
  */
 
 /**

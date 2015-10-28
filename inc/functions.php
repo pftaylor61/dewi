@@ -5,10 +5,9 @@
  * This file contains all the functions and it's defination that particularly can't be
  * in other files.
  *
- * @package Old Castle Web Services
+ * @package ThemeGrill
  * @subpackage dewi
- * @since dewi 1.3.3
- * This version by Old Castle Web Services, 2015 - based on Spacious by ThemeGrill
+ * @since dewi 1.0
  */
 
 /****************************************************************************************/
