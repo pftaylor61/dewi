@@ -289,6 +289,7 @@ function dewi_options_display_sidebar() {
                         <img src="<?php echo dewi_ASSETS_URL.'/screenshot240.png'; ?>" style="margin-right:auto; margin-left:auto;" />
       			<div class="ocws_inside_box"> 
                             <p><strong>Dewi</strong> is a responsive theme, produced by <a href="http://www.oldcastleweb.com" target="_blank">Old Castle Web Services</a>. It grew out of a fork of the <em>Spacious</em> theme, produced by ThemeGrill, and contains code from the <a href="https://github.com/devinsays/options-framework-theme" target="_blank">Options Framework</a> plugin.</p>
+							<p><strong>Note:</strong> All images used for sliders must be 1400 x 400 pixels.</p>
 	      			
       			</div><!-- ocws_inside_box -->
 	    	</div><!-- .ocws_postbox -->
