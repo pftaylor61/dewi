@@ -80,17 +80,17 @@ function dewi_setup() {
 
 	add_theme_support( 'post-thumbnails' );
 
-	
+
 
 	// Declaring support for Woocommerce
 
 	add_theme_support( 'woocommerce' );
 
- 
+
 
 	// Registering navigation menus.
 
-	register_nav_menus( array(	
+	register_nav_menus( array(
 
 		'primary' 	=> 'Primary Menu',
 
@@ -108,7 +108,7 @@ function dewi_setup() {
 
 	add_image_size( 'featured', 642, 300, true );
 
-	add_image_size( 'featured-blog-medium-small', 230, 230, true );	
+	add_image_size( 'featured-blog-medium-small', 230, 230, true );
 
 
 
@@ -134,7 +134,7 @@ endif;
 
 /**
 
- * Define Directory Location Constants 
+ * Define Directory Location Constants
 
  */
 
@@ -144,7 +144,7 @@ define( 'dewi_CHILD_DIR', get_stylesheet_directory() );
 
 
 
-define( 'dewi_INCLUDES_DIR', dewi_PARENT_DIR. '/inc' );	
+define( 'dewi_INCLUDES_DIR', dewi_PARENT_DIR. '/inc' );
 
 define( 'dewi_CSS_DIR', dewi_PARENT_DIR . '/css' );
 
@@ -168,9 +168,9 @@ define( 'dewi_ADMIN_CSS_DIR', dewi_ADMIN_DIR . '/css' );
 
 
 
-/** 
+/**
 
- * Define URL Location Constants 
+ * Define URL Location Constants
 
  */
 
@@ -214,12 +214,12 @@ require_once( dewi_INCLUDES_DIR . '/header-functions.php' );
 
 
 
-require_once( dewi_ADMIN_DIR . '/meta-boxes.php' );		
+require_once( dewi_ADMIN_DIR . '/meta-boxes.php' );
 
 
 
 /** Load Widgets and Widgetized Area */
-// I think the widgets in this theme might be risky. 
+// I think the widgets in this theme might be risky.
 // I commented the line below to return to default widgets
 //require_once( dewi_WIDGETS_DIR . '/widgets.php' );
 
@@ -251,7 +251,7 @@ add_action( 'widgets_init', 'dewi_prov_widgets_init' );
 
  */
 
- 
+
 if ( !function_exists( 'optionsframework_init' ) ) {
 
 	define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/inc/admin/options/' );
@@ -280,7 +280,7 @@ function dewi_footer_copyright() {
 
 	$wp_link = '<a href="'.esc_url( 'http://wordpress.org' ).'" target="_blank" title="' . esc_attr__( 'WordPress', 'dewi' ) . '"><span>' . __( 'WordPress', 'dewi' ) . '</span></a>';
 
-	
+
 
 	$ocws_link = '<a href="'.esc_url( 'http://oldcastleweb.com' ).'" target="_blank" title="' . esc_attr__( 'Oldcastle Web Services', 'dewi' ) . '"><span>' . __( 'Oldcastle Web Services', 'dewi' ) . '</span></a>';
 
@@ -309,21 +309,21 @@ function ocws_latest_news() { // 1 post and news cat is 4
 		);
 
 		$new_query = new WP_Query( $args );
-		
+
 		$ocws_string = ""; ?>
 			<p class="ocws_marquee"><span><strong>Latest News:&nbsp;&nbsp;</strong>
 		<?php
 		$ocws_c = false;
 		if ( $new_query->have_posts() ) :
-		  while ( $new_query->have_posts() ) : $new_query->the_post(); 
+		  while ( $new_query->have_posts() ) : $new_query->the_post();
 				if ($ocws_c) {
 					echo "&nbsp;&nbsp&mdash;&nbsp;&nbsp;";
 				}
 				$ocws_c = true;
-				
+
 				?>
 			  <a href="<?php echo esc_url( the_permalink() ); ?>"><?php the_title(); ?></a>
-			
+
 		  <?php endwhile;
 		endif; ?>
 			</span></p>
@@ -339,7 +339,7 @@ function ocws_social_media_buttons() {// start of code to produce social media b
 
 $ocws_smbpath = get_stylesheet_directory_uri()."/32x32/";
 $fburl = "https://www.facebook.com/mshcreationcenter";
-$twitterurl = "https://twitter.com/7wondersmuseum";
+$twitterurl = "https://twitter.com/mshcreation";
 $youtubeurl = "https://www.youtube.com/7wondersmuseum";
 $pinteresturl = "https://www.pinterest.com/7wondersmuseum";
 $googleplusurl = "http://gplus.to/7wondersmuseum";
