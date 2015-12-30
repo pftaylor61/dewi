@@ -17,4 +17,9 @@ Dewi is a fully responsive theme. It is able to display an excellent slider. The
 ## Support
 Support is limited, as I do not have much time. However, you can try messaging me through http://www.oldcastleweb.com
 
+## Version 2.0
+I have added a system so that the theme's options can be backed up. 
+
+The system has been based on "Gantry Export and Import Options" by Hassan Derakhshandeh, and was put together in this form by Jeff Starr of [Digging into Wordpress](https://digwp.com/2014/04/backup-restore-theme-options/). However, the system as it stood would not work for child themes, so I edited it to get this to happen.
+
 
